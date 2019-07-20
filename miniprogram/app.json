@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/about/about",
+    "pages/me/me",
+    "pages/orderComplete/orderComplete",
+    "pages/productDetail/productDetail",
+    "pages/myinfo/myinfo",
+    "pages/shopping/shopping",
+    "pages/pay/pay",
+    "pages/category/category",
+    "pages/search/search",
+    "pages/login/login",
+    "pages/myorder/myorder",
+    "pages/mycollect/mycollect",
+    "pages/chat/chat"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "color": "#707070",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/shouye.png",
+        "selectedIconPath": "images/shouye-2.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "images/fenlei.png",
+        "selectedIconPath": "images/fenlei-2.png"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "text": "购物车",
+        "iconPath": "images/gouwuche.png",
+        "selectedIconPath": "images/gouwuche-2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "images/wo.png",
+        "selectedIconPath": "images/wo-2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

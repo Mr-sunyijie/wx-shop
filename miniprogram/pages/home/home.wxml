@@ -1,0 +1,17 @@
+<view class='header'>
+  <view class='search_box' bindtap='navigateToSearch'>
+    <image src='/images/sousuo.png' class='search_img'></image>
+    <input placeholder='请输入搜索内容' class='seach_input' disabled></input>
+  </view>
+  <view class='tag_tab'>
+    <block wx:for='{{tags}}'>
+      <text class='tag {{index == selectID ? "selected" : ""}}' bindtap='select' data-id='{{index}}' data-category='{{item.category}}'>{{item.name}}</text>
+    </block>
+  </view>
+</view>
+<view class="product_container">
+  <view class="product" wx:for="{{productList}}" data-img="{{item.img}}" data-name="{{item.name}}" bindtap="redirectToDetail" data-id='{{item.id}}' data-price='{{item.price}}'>
+    <image class="product_img" mode="aspectFit" src="{{item.img}}"></image>
+    <view class="product_name">{{item.name}}</view>
+  </view>
+</view>

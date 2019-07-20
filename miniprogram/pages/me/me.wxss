@@ -1,0 +1,63 @@
+.header {
+    text-align: center;
+}
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+.user_name {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 20px;
+    color: #333333;
+    font-weight: bold;
+}
+.setting_item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    color: #595959;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    vertical-align: bottom;
+}
+.welcome {
+  text-align: center;
+}
+.logout-btn {
+  color: #f00;
+  text-align: center;
+  padding-top: 30px;
+}
+.content {
+  margin-top: 50px;
+}
+.content .item {
+  /* background: lightblue; */
+  padding: 20px 30px;
+  border-bottom: 1px dotted #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.login-btn {
+  padding: 10px 15px;
+  background: #f2f6f7;
+  border-radius: 33px;
+  font-size: 13px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -19px;
+  margin-left: -44px;
+}
+.username {
+  color: #ccc;
+  font-size: 14px;
+}

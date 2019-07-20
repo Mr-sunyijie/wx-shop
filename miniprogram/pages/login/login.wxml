@@ -1,0 +1,7 @@
+<!--miniprogram/pages/login/login.wxml-->
+<input placeholder='请输入用户名' bindinput='inputName'/>
+<input placeholder='请输入密码' bindinput='inputPwd'/>
+<button bindtap='register'>注册</button>
+<button type='primary' bindtap='login'>登陆</button>
+
+

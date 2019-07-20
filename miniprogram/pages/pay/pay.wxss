@@ -1,0 +1,68 @@
+/* miniprogram/pages/pay/pay.wxss */
+page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #f7f7f7;
+}
+.address-container, .pay-method, .order-container, .msg-container {
+  background-color: #fff;
+  margin: 20px 20px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+.name {
+  font-weight: bold;
+}
+.address {
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 15px;
+}
+.pay-method, .oder-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.pay-method span:nth-child(1) {
+  color: #aaa;
+  font-size: 15px;
+}
+.oder-list {
+  padding: 5px 0;
+}
+.oder-list span:nth-child(1) {
+  color: #aaa;
+  width:75%;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+
+}
+input{
+  font-size: 15px;
+}
+.place-order {
+  position:fixed;
+  bottom:0;
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+  border-top:1px dashed #ccc;
+}
+.total-price {
+  flex:1;
+  line-height:50px;
+  padding-left:20px;
+  color:#f00;
+  font-size:28px;
+  background-color: #fff;
+}
+.order-btn {
+  color:#fff;
+  background:#f00;
+  height:50px;
+  line-height:50px;
+  padding:0 10px;
+}

@@ -1,0 +1,10 @@
+/* miniprogram/pages/login/login.wxss */
+input {
+  border-bottom: 1px solid #ccc;
+  margin: 50px 30px;
+}
+
+button {
+  margin: 20px 30px;
+  border-radius: 40px;
+}

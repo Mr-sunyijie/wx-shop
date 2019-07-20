@@ -1,0 +1,25 @@
+<view class='goods' wx:for='{{goods}}' data-name="{{item.name}}"  data-img="{{item.img}}" data-id='{{item.id}}'>
+  <view class='delete' bindtap='removeProduct'data-id='{{item.id}}'>x</view>
+  <view class='circle' wx:if='{{!item.condition}}' bindtap='changeCondition' data-id='{{index}}'></view>
+  <icon type='success' color='#d81e06' wx:if='{{item.condition}}' bindtap='changeCondition' class='success_icon' data-id='{{index}}'></icon>
+  <image src='{{item.img}}' class='goods_img'></image>
+  <view class='goods_description'>
+    <view class="product_name">{{item.name}}</view>
+    <view class='goods_price'>¥ {{item.price}}</view>
+    <view class='counter'>
+      <view class='sub' bindtap='subNumber' data-id='{{index}}'>-</view>
+      <view class='number' data-id='{{index}}'>{{item.number}}</view>
+      <view class='add' bindtap='addNumber' data-id='{{index}}'>+</view>
+    </view>
+  </view>
+</view>
+<view class='payment'>
+  <view>
+    <view class='circle' wx:if='{{!selectAll}}' bindtap='selectAll'></view>
+    <icon type='success' color='#d81e06' wx:if='{{selectAll}}' bindtap='selectAll' class='success_icon' size='24'></icon>
+    <text class='payment_des'>全选 合计: <text class='payment_money'>¥{{totalPrice}}</text></text>
+  </view>
+  <view class='payment_btn' bindtap='pay'>去结算</view>
+</view>
+<view class='prompt' wx:if='{{!goods.length}}'>购物车空空如也</view>
+

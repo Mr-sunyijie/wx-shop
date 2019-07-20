@@ -1,0 +1,13 @@
+<view class='chat-app'>  
+  <view class='chat-box'>
+    <view wx:for='{{msg}}' class='{{item.from == "kefu" ? "align-left" : "align-right"}}'>
+      <span class='{{item.from == "kefu" ? "msg-left" : "msg-right"}}'>{{item.msg}}</span>
+    </view>
+  </view>
+  <view class='chat-input'>
+    <view class='input-box'>
+      <input class='input' value='{{inputContent}}' bindinput='saveInputValue'></input>
+    </view>
+    <view class='send-btn' bindtap='sendMsg'>发送</view>
+  </view>
+</view>

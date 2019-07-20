@@ -1,0 +1,10 @@
+<!--miniprogram/pages/myorder/myorder.wxml-->
+<view wx:for='{{orders}}' class='order-card'>
+  <view>下单时间：<span class='order-time'>{{item.times}}</span></view>
+  <view>订单详情：</view>
+  <view wx:for='{{item.ids}}' class='order-deatil'>
+    <view>{{item}}</view>
+  </view>
+  <view>订单总额：<span class='order-price'>¥ {{item.price}}</span></view>
+  <view>订单状态：<span class='order-status'>{{item.status}}</span><span class='order-confirm' bindtap='confirmOrder' data-time='{{item.time}}' wx:if='{{item.status == "发货中"}}'>确认签收</span></view>
+</view>

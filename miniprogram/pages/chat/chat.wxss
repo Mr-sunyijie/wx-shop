@@ -1,0 +1,41 @@
+/* miniprogram/pages/chat/chat.wxss */
+.chat-box {
+  height: 91vh;
+  background: #f3f3f3;
+  overflow: scroll;
+}
+.chat-input {
+  height: 9vh;
+  display: flex;
+}
+.send-btn {
+  line-height:54px;
+  padding:0 15px;
+  background:#96ea70;
+}
+.msg-left {
+  background:#fff;
+  padding:10px;
+  border-radius:2px;
+  margin-left: 10px;
+}
+.msg-right {
+  background:#96ea70;
+  padding:10px;
+  border-radius:2px;
+  margin-right: 10px;
+}
+.align-left {
+  text-align: left;
+  margin-top: 40px;
+}
+.align-right {
+  text-align: right;
+  margin-top: 40px;
+}
+.input-box {
+  flex: 1;
+}
+.input {
+  padding:13px;
+}

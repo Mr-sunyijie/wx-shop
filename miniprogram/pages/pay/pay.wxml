@@ -1,0 +1,23 @@
+<!--miniprogram/pages/pay/pay.wxml-->
+<view class='address-container'>
+  <view class='name'>{{name}}  {{tel}}</view>
+  <view class='address'>{{address}}</view>
+</view>
+<view class='pay-method'>
+  <span class='left'>支付方式</span>
+  <span class='right'>货到付款</span>
+</view>
+<view class='order-container'>
+  <view class='oder-list' wx:for='{{goods}}'>
+    <span>{{item.name}}</span>
+    <span>x{{item.number}}</span>
+  </view>
+</view>
+<view class='msg-container'>
+  <span>留言备注：</span>
+  <input placeholder='选填，可以备注一些信息' bindinput='leaveMsg' value='{{message}}'/>
+</view>
+<view class='place-order'>
+  <span class='total-price'>¥{{totalPrice}}</span>
+  <span class='order-btn' bindtap='placeOrder'>提交订单</span>
+</view>

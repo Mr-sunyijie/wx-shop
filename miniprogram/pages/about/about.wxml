@@ -1,0 +1,9 @@
+<view class='content'>
+  <image src='../../images/shangcheng.png' class='icon-success'></image>
+</view>
+<view class='app-name'>微信小程序商城</view>
+<view class='app-version'>Version 1.0.0</view>
+<view class='header'>
+  <view class='app-author'>Mr.sun 版权所有</view>
+  <view class='app-copyright'>Copyright @ 2018-2019 Mr.sun All Rights Reserved</view>
+</view>

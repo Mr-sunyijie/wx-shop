@@ -1,0 +1,16 @@
+<view class='search_area'>
+  <view class='search_box'>
+    <image src='/images/sousuo.png' class='search_img'></image>
+    <input placeholder='请输入搜索内容' class='seach_input' confirm-type='search' bindinput='inputKeyword' value="{{content}}"></input>
+  </view>
+  <view class='search_btn' bindtap="search">搜索</view>
+</view>
+<!-- 商品搜索列表 -->
+<view class="product_item" wx:for="{{productList}}" bindtap="redirectToDetail"  data-name="{{item.name}}"  data-img="{{item.img}}" data-id='{{item.id}}' wx:if="{{content && isSearch}}" data-price='{{item.price}}'>
+  <image class="product_img" src="http://{{item.img}}"></image>
+  <view class="product_info">
+    <view class="product_name">{{item.name}}</view>
+    <view class="product_price"><span class="price_flag">¥</span>  {{item.price}}</view>
+  </view>
+</view>
+<view class='prompt' wx:if='{{noresult}}'>无搜索结果</view>

@@ -1,0 +1,32 @@
+.info-item {
+  display: flex;
+  border-bottom: 1px dotted #ccc;
+}
+.info-type {
+  padding: 20px;
+}
+.info-input {
+  flex: 1;
+  padding: 20px;
+}
+.avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.header {
+  display: flex;
+  padding: 40px 20px;
+}
+.header .username {
+  line-height: 80px;
+  margin-left: 20px;
+}
+.info-save {
+  background: #00b26a;
+  padding: 10px 20px;
+  border-radius: 100px;
+  margin: 30px;
+  text-align: center;
+  color: #fff;
+}

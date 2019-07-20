@@ -1,0 +1,116 @@
+page {
+    padding-top: 40px;
+}
+.product_img {
+    width: 100vw;
+    padding-top: 20px;
+}
+.header {
+    display: flex;
+    padding: 20px;
+}
+.product_name {
+    font-size: 14px;
+    word-break: break-all;
+    padding-right: 15px;
+    flex: 1;
+    border-right: 1px solid #f0f2f3;
+    font-weight: bold;
+}
+.favorite_container {
+    margin-left: 20px;
+}
+.favorite_icon {
+    width: 25px;
+    height: 25px;
+}
+.favorite_text {
+    font-size: 12px;
+    color: #cccccc;
+}
+.self_support {
+    font-size: 10px;
+    border: 1px solid #fb2d48;
+    color: #fb2d48;
+    border-radius: 3px;
+    margin-right: 4px;
+    padding: 0 3px;
+}
+.tick_icon {
+    width: 12px;
+    height: 12px;
+}
+.service_container {
+    border-top: 10px solid #f3f8fb;
+    border-bottom: 10px solid #f3f8fb;
+    padding-left: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.service_desc {
+    font-size: 12px;
+}
+.service_intro {
+    display: flex;
+    flex-wrap: wrap;
+}
+.service_intro_item {
+    margin-right: 8px;
+}
+.service_text {
+    font-size: 12px;
+    color: #797a7b;
+    margin-right: 15px;
+}
+.kefu_icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+}
+.footer {
+    height: 44px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #ffffff;
+}
+.kefu_text {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 5px;
+    color: #515151;
+}
+.add_btn {
+   line-height: 44px;
+   width: 35%; 
+   background-color: #fb2d48;
+   text-align: center;
+   color: #ffffff;
+   width: 40%;
+   font-size: 14px;
+}
+.add_shop {
+    background-color: #fb8090;
+}
+.kefu_container {
+    width: 15%;
+    position: relative;
+}
+.mark {
+  position:absolute;
+  right:-1px;
+  top:-10px;
+  font-size:15px;
+  display:inline-block;
+  color:#fff;
+  background:#f00;
+  border-radius:20px;
+  width:20px;
+  height:20px;
+
+}
+
+

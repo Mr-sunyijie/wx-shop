@@ -1,0 +1,47 @@
+<image class="product_img" mode="aspectFit" src="{{img}}"></image>
+<view class="header">
+    <view class="product_name"><span class="self_support">自营</span><span class="self_support">直邮</span>{{name}}</view>
+    <view class="favorite_container">
+        <image class="favorite_icon" src="/images/shoucang-2.png" bindtap='collected' wx:if='{{isCollected}}'></image>
+        <image class="favorite_icon" src="/images/shoucang.png" bindtap='collected' wx:else></image>
+        <view class="favorite_text">收藏</view>
+    </view>
+</view>
+<view class="service_container">
+    <view class="service_intro">
+        <view class="service_intro_item">
+            <image class="tick_icon" src="/images/duihao.png"></image><span class="service_desc">假一赔十</span>
+        </view>
+        <view class="service_intro_item">
+            <image class="tick_icon" src="/images/duihao.png"></image><span class="service_desc">一贵就赔</span>
+        </view>
+        <view class="service_intro_item">
+            <image class="tick_icon" src="/images/duihao.png"></image><span class="service_desc">7天保价</span>
+        </view>
+        <view class="service_intro_item">
+            <image class="tick_icon" src="/images/duihao.png"></image><span class="service_desc">自提</span>
+        </view>
+        <view class="service_intro_item">
+            <image class="tick_icon" src="/images/duihao.png"></image><span class="service_desc">可配送至海外</span>
+        </view>
+    </view>
+    <view>
+        <span class="service_text">直邮</span>
+        <span class="service_text">保税</span>   
+        <span class="service_text">7天无理由退换</span>   
+    </view>
+</view>
+<image class="product_img" mode="aspectFit" src="{{img}}"></image>
+<image class="product_img" mode="aspectFit" src="{{img}}"></image>
+<view class="footer">
+    <view class="kefu_container" bindtap='goToChat'>
+        <image class="kefu_icon" src="/images/kefu.png"></image>
+        <view class="kefu_text">客服</view>
+    </view>
+    <view class="kefu_container" bindtap="redirectToShopCar">
+        <image class="kefu_icon" src="/images/gouwuche.png"></image>
+        <view class="kefu_text">购物车<span class='mark' wx:if="{{count}}">{{count}}</span></view>
+    </view>
+    <view class="add_btn add_shop" bindtap='add_shop'>加入购物车</view>
+    <view class="add_btn" bindtap='directToBuy'>立即购买</view>
+</view>

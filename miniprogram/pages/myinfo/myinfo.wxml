@@ -1,0 +1,22 @@
+<!--miniprogram/pages/myinfo/myinfo.wxml-->
+<view class='header'>
+  <image src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=275924822,1970513645&fm=26&gp=0.jpg' class='avatar'/>
+  <view class='username'>{{username}}</view>
+</view>
+<view class='info-item'>
+  <view class='info-type'>姓名</view>
+  <input class='info-input' placeholder='请输入您的真实姓名' value='{{name}}' bindinput='inputInfo' data-type='name'/>
+</view>
+<view class='info-item'>
+  <view class='info-type'>电话</view>
+  <input class='info-input' placeholder='请输入您的电话号码' value='{{tel}}' bindinput='inputInfo' data-type='tel'/>
+</view>
+<view class='info-item'>
+  <view class='info-type'>邮箱</view>
+  <input class='info-input' placeholder='请输入您的电子邮箱地址' value='{{email}}'bindinput='inputInfo' data-type='email'/>
+</view>
+<view class='info-item'>
+  <view class='info-type'>地址</view>
+  <input class='info-input' placeholder='请输入您的收货地址' value='{{address}}' bindinput='inputInfo' data-type='address'/>
+</view>
+<view class='info-save' bindtap='saveInfo'>保存个人信息</view>

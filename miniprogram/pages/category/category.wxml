@@ -1,0 +1,9 @@
+<scroll-view scroll-y class='my-scroll-view-left' bindtap='select'>
+    <view wx:for="{{category}}" class='box {{index == id ? "selected" : ""}}' data-id='{{index}}'>{{item.name}}</view>
+</scroll-view>
+<view class="my-scroll-view-right">
+    <view class="brand_item" wx:for="{{brandList}}" data-name="{{item.name}}" bindtap="navigateToSearch">
+      <image class="brand_img" src="{{item.img}}"></image>
+      <view class="brand_name">{{item.name}}</view>
+    </view>
+</view>

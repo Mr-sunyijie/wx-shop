@@ -1,0 +1,7 @@
+<!--miniprogram/pages/orderComplete/orderComplete.wxml-->
+<view class='content'>
+  <image src='../../images/orderSuccess.png' class='icon-success'></image>
+</view>
+<view class='info'>下单成功</view>
+<view class='detail' bindtap='goToDetail'>查看订单详情</view>
+<view class='detail' bindtap='goHome'>返回首页</view>
